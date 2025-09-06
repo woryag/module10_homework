@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gilroy';
+}
+
+.chat-winow {
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+  padding: 1rem;
+  height: 80vh;
+  width: 40%;
+  border: .0625rem solid #333;
+  border-radius: 0.5rem;
+  gap: 1rem;
+}
+
+.chat-winow__controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chat-winow__input-message {
+  width: 100%;
+  max-width: 100%;
+  height: 1.3rem;
+  border: 1px solid #333;
+  border-radius: .2rem;
+  background-color: #e6e6e6;
+}
+
+.btn {
+  padding: 0 1rem;
+  height: 1.5rem;
+  font-family: 'Gilroy';
+  border: none;
+  border-radius: .2rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #252525;
+  box-shadow: 0px 2px 5px 2px rgba(144, 150, 178, .3);
+  transform: scale(1.05);
+}
+
+.chat-winow__correspondence {
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 70%;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 0.5rem;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #0078ff;
+  color: white;
+}
+
+.message.server {
+  align-self: flex-start;
+  background-color: #e6e6e6;
+  color: #333;
+}
